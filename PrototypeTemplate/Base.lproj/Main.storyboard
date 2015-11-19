@@ -1,25 +1,250 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dRe-uW-y1y">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="ZVe-FW-aVq">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VSd-Wi-AIq" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="GsV-iv-WWq"/>
+                        <viewControllerLayoutGuide type="bottom" id="WjA-BE-VKO"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="ebN-0G-sxl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NbO-nl-Ba7">
+                                <rect key="frame" x="20" y="64" width="374" height="372"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="BHd-CD-4HX">
+                                        <rect key="frame" x="112" y="0.0" width="150" height="150"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="iht-WU-YDp"/>
+                                            <constraint firstAttribute="height" constant="150" id="qaz-va-Nz0"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Salil Apte" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0VS-Db-X0T">
+                                        <rect key="frame" x="151" y="150" width="72" height="201"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Underwater Guitar Player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msV-hU-iyP">
+                                        <rect key="frame" x="91" y="351" width="193" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="NbO-nl-Ba7" secondAttribute="trailing" id="0yb-BM-Ddd"/>
+                            <constraint firstItem="NbO-nl-Ba7" firstAttribute="top" secondItem="GsV-iv-WWq" secondAttribute="bottom" id="BFn-4E-NhY"/>
+                            <constraint firstItem="WjA-BE-VKO" firstAttribute="top" secondItem="NbO-nl-Ba7" secondAttribute="bottom" constant="300" id="PMO-KY-VRv"/>
+                            <constraint firstItem="NbO-nl-Ba7" firstAttribute="leading" secondItem="ebN-0G-sxl" secondAttribute="leadingMargin" id="PjI-gV-nbg"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Salil Apte"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TOd-ST-oao" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1807" y="418"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CIx-aj-GnP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dRe-uW-y1y" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LSZ-tx-hLE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hYr-Am-5Ax" kind="relationship" relationship="rootViewController" id="zmF-e9-Vxy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K3P-rd-dfv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="418"/>
+        </scene>
+        <!--People-->
+        <scene sceneID="3O6-rJ-QOW">
+            <objects>
+                <tableViewController id="hYr-Am-5Ax" customClass="PrototypeViewController" customModule="PrototypeTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="3pk-el-UWe" customClass="PrototypeTableView" customModule="PrototypeTemplate" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonCell" id="N0Q-Fe-mN5">
+                                <rect key="frame" x="0.0" y="92" width="414" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="N0Q-Fe-mN5" id="IP9-XZ-1Uy">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="79"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="yyR-rK-fjP">
+                                            <rect key="frame" x="18" y="13" width="378" height="53"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="D07-Uc-Qdn">
+                                                    <rect key="frame" x="0.0" y="4" width="46" height="46"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="46" id="KmV-iK-nab"/>
+                                                        <constraint firstAttribute="width" secondItem="D07-Uc-Qdn" secondAttribute="height" multiplier="1:1" id="e67-oJ-x1c"/>
+                                                        <constraint firstAttribute="height" constant="46" id="gN8-OG-P0f"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="23"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="e67-oJ-x1c"/>
+                                                        </mask>
+                                                    </variation>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="UjA-XR-FcN">
+                                                    <rect key="frame" x="58" y="6" width="320" height="41"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salil Apte" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggH-0P-Unc">
+                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="21"/>
+                                                            <animations/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                            <color key="textColor" white="0.19810892059999999" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Underwater Guitar Player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0n9-wb-wh7">
+                                                            <rect key="frame" x="0.0" y="25" width="320" height="16"/>
+                                                            <animations/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <color key="textColor" white="0.39970462810000001" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <animations/>
+                                                </stackView>
+                                            </subviews>
+                                            <animations/>
+                                        </stackView>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstItem="yyR-rK-fjP" firstAttribute="leading" secondItem="IP9-XZ-1Uy" secondAttribute="leadingMargin" constant="10" id="7QI-Dj-ImP"/>
+                                        <constraint firstItem="yyR-rK-fjP" firstAttribute="top" secondItem="IP9-XZ-1Uy" secondAttribute="topMargin" constant="5" id="PFb-VY-5Up"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="yyR-rK-fjP" secondAttribute="bottom" constant="5" id="a7J-16-iYA"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="yyR-rK-fjP" secondAttribute="trailing" constant="10" id="f2s-K1-GJo"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <segue destination="VSd-Wi-AIq" kind="show" id="mJ3-5W-evf"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonCellAlt" id="3T9-nq-J2c">
+                                <rect key="frame" x="0.0" y="172" width="414" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3T9-nq-J2c" id="e2f-CB-uN7">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="79"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="p7x-wd-utE">
+                                            <rect key="frame" x="18" y="13" width="378" height="53"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvatarAlt" translatesAutoresizingMaskIntoConstraints="NO" id="WAd-eP-gZV">
+                                                    <rect key="frame" x="0.0" y="4" width="46" height="46"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="46" id="8G3-dc-DqN"/>
+                                                        <constraint firstAttribute="width" secondItem="WAd-eP-gZV" secondAttribute="height" multiplier="1:1" id="pQW-Yg-zdi"/>
+                                                        <constraint firstAttribute="height" constant="46" id="zZd-4C-6f8"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="23"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="pQW-Yg-zdi"/>
+                                                        </mask>
+                                                    </variation>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="QAw-HV-UQM">
+                                                    <rect key="frame" x="58" y="6" width="320" height="41"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salil Apte" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaz-yN-d44">
+                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="21"/>
+                                                            <animations/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                            <color key="textColor" white="0.19810892059999999" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Underwater Basketweaver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zar-EN-yQb">
+                                                            <rect key="frame" x="0.0" y="25" width="320" height="16"/>
+                                                            <animations/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <color key="textColor" white="0.39970462810000001" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <animations/>
+                                                </stackView>
+                                            </subviews>
+                                            <animations/>
+                                        </stackView>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="p7x-wd-utE" secondAttribute="bottom" constant="5" id="2SY-0R-BMy"/>
+                                        <constraint firstItem="p7x-wd-utE" firstAttribute="leading" secondItem="e2f-CB-uN7" secondAttribute="leadingMargin" constant="10" id="aVx-yQ-Kse"/>
+                                        <constraint firstItem="p7x-wd-utE" firstAttribute="top" secondItem="e2f-CB-uN7" secondAttribute="topMargin" constant="5" id="f2d-ha-DO8"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="p7x-wd-utE" secondAttribute="trailing" constant="10" id="fF6-ad-pFO"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="tableRow" value="0:0:PersonCell"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="tableRow" value="0:1:PersonCellAlt"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="dataSource" destination="hYr-Am-5Ax" id="e1A-aq-SMA"/>
+                            <outlet property="delegate" destination="hYr-Am-5Ax" id="PGp-1l-wrG"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="People" id="iaB-9s-8y8"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tb4-1I-Etw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1066" y="418"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Avatar" width="270" height="270"/>
+        <image name="AvatarAlt" width="400" height="400"/>
+    </resources>
 </document>
